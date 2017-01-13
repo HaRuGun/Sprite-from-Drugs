@@ -1,15 +1,22 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class DisplaySet : MonoBehaviour {
+public class DisplaySet : MonoBehaviour
+{
+    private SpriteRenderer sprRend;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    void Start()
+    {
+        sprRend = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            if (sprRend.enabled)
+                sprRend.enabled = false;
+            else
+                sprRend.enabled = true;
+        }
+    }
 }
