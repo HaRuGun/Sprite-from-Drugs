@@ -7,6 +7,6 @@ public class NashiManager : MonoBehaviour
     void Awake()
     {
         Instantiate(NashiAct).transform.position =
-            new Vector3(0.7f, 0.5f, -1f);
+            new Vector3(0.7f, 0.5f, -1.0f);
     }
 }
