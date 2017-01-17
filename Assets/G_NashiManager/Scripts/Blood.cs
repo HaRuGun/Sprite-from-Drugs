@@ -12,7 +12,7 @@ public class Blood : MonoBehaviour
     void Update()
     {
         time++;
-        if (time >= 18)
+        if (time >= 7)
             DestroyObject(this.gameObject);
     }
 }
