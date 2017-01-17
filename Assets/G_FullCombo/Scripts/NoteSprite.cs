@@ -36,7 +36,8 @@ public class NoteSprite : MonoBehaviour
         if (transform.position.y <= -2 && transform.position.y >= -3.3)
         {
             burst = true;
-            Instantiate(blood).transform.position =
+            Transform transform = this.gameObject.transform;
+            Instantiate(blood, transform).transform.position =
                 new Vector3(this.transform.position.x, this.transform.position.y - 1.5f);
         }
     }

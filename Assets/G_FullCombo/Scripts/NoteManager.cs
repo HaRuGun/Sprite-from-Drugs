@@ -12,14 +12,25 @@ public class NoteManager : MonoBehaviour
         runningTime++;
         if (runningTime >= 40)
         {
-            runningTime = 0;
+            if (noteCount > 0)
+            {
+                noteCount--;
+                Transform transform = this.gameObject.transform;
+                Instantiate(note, transform).transform.position =
+                    new Vector3(Random.Range(-3f, 3f), 15f, -2f);
 
-            if (noteCount <= 0)
-                return;
-            noteCount--;
-
-            Instantiate(note).transform.position =
-                new Vector3(Random.Range(-3f, 3f), 15f, -2f);
+                runningTime = 0;
+            }
+            else if (runningTime >= 100)
+            {
+                GameManager.GetInstance.NewGame();
+                DestroyObject(this.gameObject);
+            }
         }
+    }
+
+    void FixedUpdate()
+    {
+        
     }
 }

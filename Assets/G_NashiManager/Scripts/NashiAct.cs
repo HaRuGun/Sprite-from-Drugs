@@ -23,7 +23,8 @@ public class NashiAct : MonoBehaviour
     {
         if (score >= 3)
         {
-            Instantiate(nashiHead).transform.position =
+            Transform transform = this.gameObject.transform;
+            Instantiate(nashiHead, transform).transform.position =
                 new Vector3(0.2f, 5.5f, -4f);
             score = 0;
         }

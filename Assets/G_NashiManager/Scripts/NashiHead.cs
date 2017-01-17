@@ -28,7 +28,8 @@ public class NashiHead : MonoBehaviour
     {
         if (transform.position.y <= -6.9)
         {
-            Instantiate(blood).transform.position = transform.position + new Vector3(0f, 2f);
+            Transform transform = this.gameObject.transform;
+            Instantiate(blood, transform).transform.position = transform.position + new Vector3(0f, 2f);
             DestroyObject(this.gameObject);
         }
     }
