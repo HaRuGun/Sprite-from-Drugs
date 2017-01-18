@@ -78,10 +78,13 @@
     <Compile Include="Assets\G_FullCombo\Scripts\NoteBlood.cs" />
     <Compile Include="Assets\G_FullCombo\Scripts\NoteManager.cs" />
     <Compile Include="Assets\G_FullCombo\Scripts\NoteSprite.cs" />
-    <Compile Include="Assets\G_NashiManager\Scripts\Blood.cs" />
-    <Compile Include="Assets\G_NashiManager\Scripts\NashiAct.cs" />
-    <Compile Include="Assets\G_NashiManager\Scripts\NashiHead.cs" />
-    <Compile Include="Assets\G_NashiManager\Scripts\NashiManager.cs" />
+    <Compile Include="Assets\G_Nashi\Scripts\Blood.cs" />
+    <Compile Include="Assets\G_Nashi\Scripts\NashiAct.cs" />
+    <Compile Include="Assets\G_Nashi\Scripts\NashiHead.cs" />
+    <Compile Include="Assets\G_Nashi\Scripts\NashiManager.cs" />
+    <Compile Include="Assets\G_Ticketing\Scripts\Fire.cs" />
+    <Compile Include="Assets\G_Ticketing\Scripts\Seat.cs" />
+    <Compile Include="Assets\G_Ticketing\Scripts\SeatManager.cs" />
     <Compile Include="Assets\GameManager\GameManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

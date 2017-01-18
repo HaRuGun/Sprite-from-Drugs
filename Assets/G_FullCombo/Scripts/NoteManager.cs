@@ -21,7 +21,7 @@ public class NoteManager : MonoBehaviour
 
                 runningTime = 0;
             }
-            else if (runningTime >= 100)
+            else if (runningTime >= 150)
             {
                 GameManager.GetInstance.NewGame();
                 DestroyObject(this.gameObject);

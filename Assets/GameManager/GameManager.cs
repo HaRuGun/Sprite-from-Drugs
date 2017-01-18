@@ -4,15 +4,16 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gNashi;
     public GameObject gFullCombo;
+    public GameObject gTicketing;
 
     private GameObject[] gameList;
     private int gameIndex;
 
     void Awake()
     {
-        gameList = new GameObject[2]
+        gameList = new GameObject[3]
         {
-            gNashi, gFullCombo
+            gNashi, gFullCombo, gTicketing
         };
         instance = this;
         DontDestroyOnLoad(gameObject);
@@ -22,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     public void NewGame()
     {
-        gameIndex = Random.Range(0, 2);
+        gameIndex = Random.Range(0, 3);
         Instantiate(gameList[gameIndex]);
     }
 
